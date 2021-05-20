@@ -1,0 +1,14 @@
+
+[project]
+name = "dmtdao"
+
+[contracts.src20-trait]
+path = "contracts/src20-trait.clar"
+depends_on = []
+
+
+[contracts.dmt-token]
+path = "contracts/dmt-token.clar"
+depends_on = []
+
+[notebooks]

@@ -122,6 +122,8 @@
 
 - developed by psq
 - Dex on Stacks 2.0
+- [native token contract](https://github.com/psq/flexr/blob/master/contracts/flexr-token.clar)
+- [oracle supported](https://github.com/psq/flexr/blob/master/contracts/oracle.clar)
 
 [TokenSoft](https://github.com/tokensoft/tokensoft_token_stacks):
 
