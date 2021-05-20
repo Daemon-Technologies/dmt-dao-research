@@ -5,7 +5,8 @@
 - Contract to do:
 
   - DMT Token:
-    - Has a property ‘authorized minter’ (that can be updated)Only allows minting from authorized address (the minting contract) This is the main contract that cannot ever be changed
+    - Has a property ‘authorized minter’ (that can be updated)
+    - Only allows minting from authorized address (the minting contract) This is the main contract that cannot ever be changed
   - DMT Minting Contract:
     - Accepts STX and hold STX
     - Allows an admin to transfer STX
@@ -28,7 +29,8 @@
   
 
 ## Schedule
-
+- Clarinet project building
+  - 5.21 Friday
 - DMT Token Contract (mocknet)
   - 5.20 Thur
   - less than 100 lines
