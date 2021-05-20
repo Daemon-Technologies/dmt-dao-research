@@ -29,23 +29,22 @@
   
 
 ## Schedule
-- Clarinet project building
-  - 5.21 Friday
-- DMT Token Contract (mocknet)
-  - 5.20 Thur
-  - less than 100 lines
-- DMT Minting Contract (mocknet)
-  - 5.26 Tuesday
-  - 200~300 lines
+- [x] Clarinet project building
+  - [x] 5.21 Friday
+- [ ] DMT Token Contract (mocknet)
+  - [ ]5.20 Thur
+    - less than 100 lines
+- [ ] DMT Minting Contract (mocknet)
+  - [ ]5.26 Tuesday
+    - 200~300 lines
     - Bonding curve details(need to list every input and output in details)
-- STX Stacking Contract:
-  - discuss a centralized way before 5.21
-  - Will list the lines after the discussion.
-    - manually stacking for each cycles.
-- STX Redemption contract 
-  - Should have detailed discusstion.
-- Pay out BTC from Stacking to buy stx or DMT holders.
-  - Should have more detailed discussion.
+- [ ] STX Stacking Contract:
+  - [ ]discuss a centralized way
+  - [ ]manually stacking for each cycles.
+- [ ] STX Redemption contract 
+  - [ ]Should have detailed discusstion.
+- [ ] Pay out BTC from Stacking to buy stx or DMT holders.
+  - [ ]Should have detailed discussion.
 
 
 
