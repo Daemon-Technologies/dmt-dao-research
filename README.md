@@ -30,21 +30,36 @@
 
 ## Schedule
 - [x] Clarinet project building
-  - [x] 5.21 Friday
+  - [x] Clarinet check
+  - [x] Clarinet test
+  - [x] Before 5.21 Friday
 - [ ] DMT Token Contract (mocknet)
-  - [ ]5.20 Thur
-    - less than 100 lines
+  - [ ] src-20 trait contract
+    - [x] transfer
+    - [x] name
+    - [x] symbol
+    - [x] decimals 
+    - [x] balance-of 
+    - [x] total-supply 
+    - [ ] support memo in new src-20 standard
+  - [ ] support basic function
+    - [x] supply 
+    - [x] balance_of 
+    - [x] transfer 
+    - [x] transferFrom   
+    - [ ] approve
+    - [ ] allowance
 - [ ] DMT Minting Contract (mocknet)
-  - [ ]5.26 Tuesday
+  - [ ] 5.26 Tuesday
     - 200~300 lines
     - Bonding curve details(need to list every input and output in details)
 - [ ] STX Stacking Contract:
-  - [ ]discuss a centralized way
-  - [ ]manually stacking for each cycles.
+  - [ ] discuss a centralized way
+  - [ ] manually stacking for each cycles.
 - [ ] STX Redemption contract 
-  - [ ]Should have detailed discusstion.
+  - [ ] Should have detailed discusstion.
 - [ ] Pay out BTC from Stacking to buy stx or DMT holders.
-  - [ ]Should have detailed discussion.
+  - [ ] Should have detailed discussion.
 
 
 
