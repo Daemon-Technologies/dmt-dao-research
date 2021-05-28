@@ -3,6 +3,10 @@
 - [Docs](https://docs.google.com/document/d/1-QDv8wXhCe1JKuzKTdsPBm4vNV98p5ArBbxV4r5gct4/edit?ts=60458341)
 - [FrontEnd](https://docs.google.com/document/u/1/d/18V4TMDimBv38EbWFSlUy8d0A4V87Rxw9s-agT5Gtt0I/edit?ts=60a72d38)
 
+
+
+![DMT-DAO](https://user-images.githubusercontent.com/37820916/119911527-03805200-bf8c-11eb-8d58-d3060aec8f49.png)
+
 - Contract to do:
 
   - DMT Token:
@@ -24,6 +28,8 @@
   - Pay out some amount of BTC from Stacking to DMT holders
   - Use some amount of the BTC from Stacking to buy more STX on open market to add to DAO
   - STX Redemption contract 
+  - 
+
 
   
 
