@@ -1,11 +1,17 @@
 # DMT Dao Schedule
 
 - [Docs](https://docs.google.com/document/d/1-QDv8wXhCe1JKuzKTdsPBm4vNV98p5ArBbxV4r5gct4/edit?ts=60458341)
+- [FrontEnd](https://docs.google.com/document/u/1/d/18V4TMDimBv38EbWFSlUy8d0A4V87Rxw9s-agT5Gtt0I/edit?ts=60a72d38)
+
+
+
+![DMT-DAO](https://user-images.githubusercontent.com/37820916/119911527-03805200-bf8c-11eb-8d58-d3060aec8f49.png)
 
 - Contract to do:
 
   - DMT Token:
-    - Has a property ‘authorized minter’ (that can be updated)Only allows minting from authorized address (the minting contract) This is the main contract that cannot ever be changed
+    - Has a property ‘authorized minter’ (that can be updated)
+    - Only allows minting from authorized address (the minting contract) This is the main contract that cannot ever be changed
   - DMT Minting Contract:
     - Accepts STX and hold STX
     - Allows an admin to transfer STX
@@ -22,28 +28,45 @@
   - Pay out some amount of BTC from Stacking to DMT holders
   - Use some amount of the BTC from Stacking to buy more STX on open market to add to DAO
   - STX Redemption contract 
+  - 
+
 
   
 
   
 
 ## Schedule
-
-- DMT Token Contract (mocknet)
-  - 5.20 Thur
-  - less than 100 lines
-- DMT Minting Contract (mocknet)
-  - 5.26 Tuesday
-  - 200~300 lines
+- [x] Clarinet project building
+  - [x] Clarinet check
+  - [x] Clarinet test
+  - [x] Before 5.21 Friday
+- [ ] DMT Token Contract (mocknet)
+  - [ ] src-20 trait contract
+    - [x] transfer
+    - [x] name
+    - [x] symbol
+    - [x] decimals 
+    - [x] balance-of 
+    - [x] total-supply 
+    - [ ] support memo in new src-20 standard
+  - [ ] support basic function
+    - [x] supply 
+    - [x] balance_of 
+    - [x] transfer 
+    - [x] transferFrom   
+    - [ ] approve
+    - [ ] allowance
+- [ ] DMT Minting Contract (mocknet)
+  - [ ] 5.26 Tuesday
+    - 200~300 lines
     - Bonding curve details(need to list every input and output in details)
-- STX Stacking Contract:
-  - discuss a centralized way before 5.21
-  - Will list the lines after the discussion.
-    - manually stacking for each cycles.
-- STX Redemption contract 
-  - Should have detailed discusstion.
-- Pay out BTC from Stacking to buy stx or DMT holders.
-  - Should have more detailed discussion.
+- [ ] STX Stacking Contract:
+  - [ ] discuss a centralized way
+  - [ ] manually stacking for each cycles.
+- [ ] STX Redemption contract 
+  - [ ] Should have detailed discusstion.
+- [ ] Pay out BTC from Stacking to buy stx or DMT holders.
+  - [ ] Should have detailed discussion.
 
 
 
