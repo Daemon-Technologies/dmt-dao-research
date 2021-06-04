@@ -57,7 +57,7 @@
     - [ ] approve
     - [ ] allowance
 - [ ] DMT Minting Contract (mocknet)
-  - [ ] 5.26 Tuesday
+  - [ ] 
     - 200~300 lines
     - Bonding curve details(need to list every input and output in details)
 - [ ] STX Stacking Contract:
@@ -98,6 +98,7 @@
 - [Tutorial Demo 3](https://docs.stacks.co/build-apps/guides/transaction-signing)
 - [Tutorial Demo 4](https://docs.stacks.co/build-apps/tutorials/public-registry)
 
+
 #### Developing tools
 
 [Clarinet](https://github.com/lgalabru/clarinet):
@@ -109,6 +110,12 @@
 
 - Javascript SDK for interacting with Clarity smart contracts
 - [create-clarity-starter](https://github.com/blockstack/clarity-js-sdk/blob/master/packages/create-clarity-starter/README.md)
+
+
+#### Relevant Projects
+
+[Clarity-Bitcoin](https://github.com/jcnelson/clarity-bitcoin)
+- Clarity library for parsing Bitcoin transactions and block headers, and verifying that Bitcoin transactions were sent on the Bitcoin chain.
 
 ## Projects:
 
