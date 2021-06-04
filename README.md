@@ -161,3 +161,5 @@
 
 - xbtc token
 
+[CityCoin](https://github.com/citycoins/citycoin)
+- Miami Coin 
