@@ -41,7 +41,7 @@
   - [x] Clarinet test
   - [x] Before 5.21 Friday
 - [ ] DMT Token Contract (mocknet)
-  - [ ] src-20 trait contract
+  - [ ] [src-20 trait contract](https://github.com/Daemon-Technologies/DMT-DAO/tree/main/src/contracts/src-20-trait.clar)
     - [x] transfer
     - [x] name
     - [x] symbol
@@ -57,9 +57,11 @@
     - [ ] approve
     - [ ] allowance
 - [ ] DMT Minting Contract (mocknet)
-  - [ ] 
+  - [ ] [DMT Minting Contract](https://github.com/Daemon-Technologies/DMT-DAO/tree/main/src/contracts/dmt-token.clar)
     - 200~300 lines
     - Bonding curve details(need to list every input and output in details)
+  - [ ] [PoX Lite Contract](https://github.com/Daemon-Technologies/DMT-DAO/tree/main/src/contracts/pox-lite.clar)
+    - [ ] Integration
 - [ ] STX Stacking Contract:
   - [ ] discuss a centralized way
   - [ ] manually stacking for each cycles.
@@ -74,7 +76,7 @@
 
 ## Infrastructure
 
-[fungible token standard](https://github.com/stacksgov/Stacks-Grants/issues/44):
+[fungible tokenen.clar standard](https://github.com/stacksgov/Stacks-Grants/issues/44):
 
 - [Hank's pr](https://github.com/stacksgov/sips/pull/5)
 
