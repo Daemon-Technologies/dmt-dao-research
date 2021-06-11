@@ -191,35 +191,26 @@
 - Dapp
   - Connection with chrome-extension wallet
   - Basic info of the dapp
-    - total miners
-    - total burn amount in per block
-    - total stackers
-    - total stack amount in per cycle
-    - total mined by the user
-    - the winner at per block
   - User interfaces
     - mine
     - stack
     - claim-token-reward
     - claim-stacking-reward
-    - auto-mine
-
-### Backend
-
-Maybe we still need a backend, because the POX Lite Contract is the convinent enough for users, or maybe we need to make a new contract to help users manage their assets.
-
-Problems are as follows:
-
-- The user needs to call `mine-tokens` function at each block.
-- Even the user call `mine-tokens` function, he will not know the result  until pass the window(maybe 100 blocks).
-- The POX Lite Contract can only show the winner of per block and it's not userfriendly if the user wants to know how much he has mined.
 
 
 
-Solutions:
+## Project Process
 
-- Rewrite the POX Lite Contract
-- Or we can create a new contract to help users manage assets
-  - call `mine-tokens`
-  - call `stack-tokens`
+### Mining
 
+The mining process is like buying a lottery ticket. **Every 5 blocks is a round.** Assuming that the system will start mining at block 1, and the end of each round is on the 6th, 11th, 16th, etc. If the user deposits into the contract during a round, it will be automatically placed in the next round of calculation . For example, if the user deposit into the contract on the 3rd block, it will be confirmed on the 11th block whether he has mined a block and how much he has mined. 
+
+**The user only needs to call the contract(`mine`) once in each round, not each block. When each round is over, the user can claim his rewards.**
+
+The probability of success in each round of mining is calculated as follows:
+
+We assume that the total STX amount in each round is Ni, and i represents the i-th round. Assuming that the user deposits 100 STX to enter the contract before the i-th round, the average computing power of the user for each block in the i-th round is 20 STX. That is, the probability of a user's mining success in each block (5 blocks in a round) is about 100/Ni.
+
+### Stacking
+
+It works as before.
