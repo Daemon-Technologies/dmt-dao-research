@@ -31,9 +31,9 @@
   - 
 
 
-  
 
-  
+
+
 
 ## Schedule
 - [x] Clarinet project building
@@ -163,3 +163,63 @@
 
 [CityCoin](https://github.com/citycoins/citycoin)
 - Miami Coin 
+
+
+
+## Development Work
+
+### Smart Contract
+
+- DMT Token Contract
+  - **transfer**
+  - **balance-of**
+- DMT Minting Contract(contains core part of POX Lite Contract)
+  - **mine-tokens**: Mine tokens.  The miner commits uSTX into this contract (which Stackers can claim later with claim-stacking-reward), and in doing so, enters their candidacy to be able to claim the block reward (via claim-token-reward).
+  - **claim-token-reward**: Claim the block reward. This mints and transfers out a miner's tokens if it is indeed the block winner for the given Stacks block.
+  - **stack-tokens**: Stack the contract's tokens.
+  - **get-entitled-stacking-reward**: Determine how many uSTX a Stacker is allowed to claim, given the reward cycle they Stacked in and the current block height.
+  - **claim-stacking-reward**: Claim a Stacking reward.  Once a reward cycle passes, a Stacker can call this method to obtain any uSTX that were committed to the contract during that reward cycle (proportional to how many tokens they locked up).
+  - **get-block-winner**: determine which miner won the token batch at a particular Stacks block height, given a sampling value.
+  - **get-tokens-per-cycle**: Getter for getting how many uSTX are committed and tokens are Stacked per reward cycle.
+  - **get-stacked-in-cycle**:  Getter for getting how many tokens are Stacked by the given principal in the given reward cycle.
+  - **get-miners-at-block**: Getter for getting the list of miners and uSTX committments for a given block.
+- Voting Contract - Pending...
+
+### Frontend
+
+- Landing Page
+- Dapp
+  - Connection with chrome-extension wallet
+  - Basic info of the dapp
+    - total miners
+    - total burn amount in per block
+    - total stackers
+    - total stack amount in per cycle
+    - total mined by the user
+    - the winner at per block
+  - User interfaces
+    - mine
+    - stack
+    - claim-token-reward
+    - claim-stacking-reward
+    - auto-mine
+
+### Backend
+
+Maybe we still need a backend, because the POX Lite Contract is the convinent enough for users, or maybe we need to make a new contract to help users manage their assets.
+
+Problems are as follows:
+
+- The user needs to call `mine-tokens` function at each block.
+- Even the user call `mine-tokens` function, he will not know the result  until pass the window(maybe 100 blocks).
+- The POX Lite Contract can only show the winner of per block and it's not userfriendly if the user wants to know how much he has mined.
+
+
+
+Solutions:
+
+- Rewrite the POX Lite Contract
+- Or we can create a new contract to help users manage assets
+  - call `mine-tokens`
+  - call `stack-tokens`
+
