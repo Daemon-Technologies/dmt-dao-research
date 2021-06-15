@@ -214,3 +214,14 @@ We assume that the total STX amount in each round is Ni, and i represents the i-
 ### Stacking
 
 It works as before.
+
+
+
+## Timeline
+
+2021.06.15 - 2021.06.19: 
+
+- Connection with the chrome-extension wallet, make sure that we can call the wallet through our dapp.
+- Call the smart contract through the chrome-extension wallet.
+- Implement the smart contract V1 and deploy it on the testnet.
+
