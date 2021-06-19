@@ -1,4 +1,3 @@
-;; Refer to https://github.com/citycoins/citycoin/blob/main/contracts/sip-10-ft-standard.clar
 (define-trait sip-010-trait
   (
     ;; Transfer from the caller to a new principal
@@ -23,5 +22,3 @@
     (get-token-uri () (response (optional (string-utf8 256)) uint))
   )
 )
-
-

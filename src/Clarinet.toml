@@ -3,7 +3,7 @@
 name = "dmtdao"
 
 [contracts.dmtdao]
-path = "contracts/dmtdao.clar"
+path = "contracts/dmtmint.clar"
 depends_on = []
 
 [notebooks]
