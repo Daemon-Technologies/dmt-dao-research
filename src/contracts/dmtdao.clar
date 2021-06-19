@@ -17,6 +17,7 @@
 (define-constant ERR-TOO-SMALL-COMMITMENT u15)
 
 
+
 (define-constant TOKEN-REWARD-MATURITY u5)        ;; how long a miner must wait before claiming their minted tokens
 
 ;; How many uSTX are mined per reward cycle, and how many tokens are locked up in the same reward cycle.
