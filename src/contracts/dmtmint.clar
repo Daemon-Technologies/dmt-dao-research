@@ -18,8 +18,6 @@
 
 (define-constant TOKEN-REWARD-MATURITY u5)        ;; how long a miner must wait before claiming their minted tokens
 
-
-
 (define-map mined-blocks
     { stacks-block-height: uint }
     {
@@ -44,8 +42,9 @@
 (define-data-var token-uri (optional (string-utf8 256)) (some u"<link to token-uri>"))
 
 ;;;;;;;;;;;;;;;;;;;;; SIP 010 ;;;;;;;;;;;;;;;;;;;;;;
-;; testnet: (impl-trait 'ST2EKQHV1XVFET0FP9VC4EBTFSCA1GVACD6QR3RXR.sip-010-trait)
-;; reuse sip10 contract 
+;; testnet 
+;; (impl-trait 'ST2EKQHV1XVFET0FP9VC4EBTFSCA1GVACD6QR3RXR.sip-010-trait-ft-standard.sip-010-trait)
+;; mainnet
 ;;(impl-trait 'SP3FBR2AGK5H9QBDH3EEN6DF8EK8JY7RX8QJ5SVTE.sip-010-trait-ft-standard.sip-010-trait)
 
 (define-read-only (get-name)
