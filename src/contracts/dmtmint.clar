@@ -32,7 +32,9 @@ u113 u114 u115 u116 u117 u118 u119 u120 u121 u122 u123 u124 u125 u126 u127 u128
 (define-constant ACTIVATION-HEIGHT u3000)       ;; The beginning height of the mining process
 (define-constant MAX-MINERS-COUNT u128)               ;; maximum players in one cycle
 
-(define-constant RTX_CUSTODIED_WALLET 'STKBS86JFA8BBJ1FF66QQEV855SQS6PWQ4TZ0ASQ)  ;; the custodied wallet address for DMT
+(define-constant RTX_CUSTODIED_WALLET 'STMV9W9C1HDCTBSRKVFYGEJQ0NKKMD7Q47040ZHW)  ;; the custodied wallet address for DMT Testnet
+;; (define-constant RTX_CUSTODIED_WALLET 'SPMV9W9C1HDCTBSRKVFYGEJQ0NKKMD7Q45PF0KXR)  ;; the custodied wallet address for DMT Mainnet
+
 (define-data-var dmt-wallet principal RTX_CUSTODIED_WALLET)  ;; variable used in place of constant for easier testing
 
 (define-data-var token-reward-maturity uint TOKEN-REWARD-MATURITY)
