@@ -206,6 +206,11 @@ u113 u114 u115 u116 u117 u118 u119 u120 u121 u122 u123 u124 u125 u126 u127 u128
                 { miner-id: miner-id, ustx: commit-ustx }
             )
 
+            (map-set miners-ids
+                { miner-id: miner-id }
+                { miner-addr: tx-sender }
+            )
+
             (map-set mined-blocks
                 { stacks-block-height: stacks-block-height }
                 {
@@ -357,6 +362,19 @@ u113 u114 u115 u116 u117 u118 u119 u120 u121 u122 u123 u124 u125 u126 u127 u128
 (define-map UintLists
     uint                ;; size
     (list 128 uint)     ;; actual list
+)
+
+(define-map miners-ids
+    {miner-id: uint}
+    {miner-addr: principal}
+)
+
+(define-read-only (get-miner-addr (miner-id uint))
+    (match (map-get? miners-ids { miner-id: miner-id })
+        miner miner
+        { 
+            miner-addr: 'STWNR9453W215A1HGRN4GPXE2SDHW2S51WFTCTEE
+        })
 )
 
 (define-private (get-uint-list (size uint))
