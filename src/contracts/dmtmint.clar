@@ -177,6 +177,7 @@ u113 u114 u115 u116 u117 u118 u119 u120 u121 u122 u123 u124 u125 u126 u127 u128
 
 ;; Getter to obtain the list of miners and uSTX commitments at a given Stacks block height,
 ;; OR, an empty such structure.
+
 (define-private (get-mined-block-or-default (stacks-block-height uint))
     (match (map-get? mined-blocks { stacks-block-height: stacks-block-height })
         block block
@@ -325,29 +326,31 @@ u113 u114 u115 u116 u117 u118 u119 u120 u121 u122 u123 u124 u125 u126 u127 u128
 
 ;; Inner fold function to determine which miner won the token batch at a particular Stacks block height, given a sampling value.
 (define-private (get-block-winner-closure (idx uint) (data { stacks-block-height: uint, sample: uint, sum: uint, winner: (optional { miner-id: uint, ustx: uint})}))
-    (match (map-get? blocks-miners { stacks-block-height: (get stacks-block-height data), idx: idx})
-        miner 
-        (let
-            (
-                (sum (get sum data))
-                (sample (get sample data))
-                (ustx (get ustx miner))
-                (next-sum (+ sum ustx))
-                (new-winner
-                    (if (and (>= sample sum) (< sample next-sum))
-                        (some miner)
-                        (get winner data)
+    (begin
+        (match (map-get? blocks-miners { stacks-block-height: (get stacks-block-height data), idx: idx})
+            miner 
+            (let
+                (
+                    (sum (get sum data))
+                    (sample (get sample data))
+                    (ustx (get ustx miner))
+                    (next-sum (+ sum ustx))
+                    (new-winner
+                        (if (and (>= sample sum) (< sample next-sum))
+                            (some miner)
+                            (get winner data)
+                        )
                     )
                 )
+                {
+                    stacks-block-height: (get stacks-block-height data),
+                    sample: sample,
+                    sum: next-sum,
+                    winner: new-winner
+                }
             )
-            {
-                stacks-block-height: (get stacks-block-height data),
-                sample: sample,
-                sum: next-sum,
-                winner: new-winner
-            }
+            data
         )
-        data
     )
 )
 
@@ -358,6 +361,21 @@ u113 u114 u115 u116 u117 u118 u119 u120 u121 u122 u123 u124 u125 u126 u127 u128
 
 (define-private (get-uint-list (size uint))
     (default-to (list ) (map-get? UintLists size))
+)
+
+(fold fill-uint-list-closure LONG-UINT-LIST true)
+
+(define-private (fill-uint-list-closure (idx uint) (x bool))
+    (if (is-eq idx u1)
+        (map-insert UintLists
+            idx
+            (unwrap-panic (as-max-len? (list u1) u128))
+        )
+        (map-insert UintLists
+            idx
+            (unwrap-panic (as-max-len? (append (unwrap-panic (map-get? UintLists (- idx u1))) idx) u128))
+        )
+    )
 )
 
 ;; Read the on-chain VRF and turn the lower 16 bytes into a uint, in order to sample the set of miners and determine
