@@ -11,6 +11,7 @@
                   (current-stacks-block uint))
 (get-block-winner (stacks-block-height uint) (random-sample uint))
 (get-random-uint-at-block (stacks-block uint))
+(get-next-block-height)
 (get-symbol)
 (get-name)
 (get-decimals)

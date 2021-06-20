@@ -111,6 +111,9 @@ u113 u114 u115 u116 u117 u118 u119 u120 u121 u122 u123 u124 u125 u126 u127 u128
     )
 )
 
+(define-read-only (get-next-block-height)
+    (+ (- block-height (mod block-height u5)) u6)
+)
 
 ;; Mine tokens.  The miner commits uSTX into this contract (which Stackers can claim later with claim-stacking-reward),
 ;; and in doing so, enters their candidacy to be able to claim the block reward (via claim-token-reward).  The miner must 
@@ -120,7 +123,7 @@ u113 u114 u115 u116 u117 u118 u119 u120 u121 u122 u123 u124 u125 u126 u127 u128
     (begin
         (let
             (
-                (next-block-height (+ (- block-height (mod block-height u5)) u6))
+                (next-block-height (get-next-block-height))
             )
             (if (is-some memo)
                 (print memo)
