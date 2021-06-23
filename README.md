@@ -31,44 +31,33 @@
   - 
 
 
-
-
-
-
 ## Schedule
 - [x] Clarinet project building
   - [x] Clarinet check
   - [x] Clarinet test
   - [x] Before 5.21 Friday
-- [ ] DMT Token Contract (mocknet)
-  - [ ] [src-20 trait contract](https://github.com/Daemon-Technologies/DMT-DAO/tree/main/src/contracts/src-20-trait.clar)
+- [x] DMT Token Contract (mocknet)
+  - [x] [src-20 trait contract](https://github.com/Daemon-Technologies/DMT-DAO/tree/main/src/contracts/src-20-trait.clar)
     - [x] transfer
     - [x] name
     - [x] symbol
     - [x] decimals 
     - [x] balance-of 
     - [x] total-supply 
-    - [ ] support memo in new src-20 standard
-  - [ ] support basic function
+    - [x] support memo in new src-20 standard
+  - [x] support basic function
     - [x] supply 
     - [x] balance_of 
     - [x] transfer 
-    - [x] transferFrom   
-    - [ ] approve
-    - [ ] allowance
-- [ ] DMT Minting Contract (mocknet)
-  - [ ] [DMT Minting Contract](https://github.com/Daemon-Technologies/DMT-DAO/tree/main/src/contracts/dmt-token.clar)
+- [x] DMT Minting Contract (mocknet)
+  - [x] [DMT Minting Contract](https://github.com/Daemon-Technologies/DMT-DAO/tree/main/src/contracts/dmt-token.clar)
     - 200~300 lines
     - Bonding curve details(need to list every input and output in details)
-  - [ ] [PoX Lite Contract](https://github.com/Daemon-Technologies/DMT-DAO/tree/main/src/contracts/pox-lite.clar)
-    - [ ] Integration
 - [ ] STX Stacking Contract:
   - [ ] discuss a centralized way
   - [ ] manually stacking for each cycles.
 - [ ] STX Redemption contract 
   - [ ] Should have detailed discusstion.
-- [ ] Pay out BTC from Stacking to buy stx or DMT holders.
-  - [ ] Should have detailed discussion.
 
 
 
@@ -219,9 +208,22 @@ It works as before.
 
 ## Timeline
 
-2021.06.15 - 2021.06.19: 
+- [x] 2021.06.15 - 2021.06.19: 
 
 - Connection with the chrome-extension wallet, make sure that we can call the wallet through our dapp.
 - Call the smart contract through the chrome-extension wallet.
 - Implement the smart contract V1 and deploy it on the testnet.
+
+[mainnet CONTRACT deploy](https://explorer.stacks.co/txid/0x88461aa9445df11e35e23cf4883e42e47490c9d2a1a493bac4897916adb4f0cb?chain=mainnet)
+
+- [ ] 2021.6.21 -
+- DMT Wallet Setting in Smart Contract
+  - Variable Setting for DMT Wallet
+- Multi-Mining Test
+- Minimum Mining Amount Variable
+- Token Contract Split
+- Test for Multi-Claim
+- Frontend integration of readonly function
+
+
 
