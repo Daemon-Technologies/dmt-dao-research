@@ -217,13 +217,21 @@ It works as before.
 [mainnet CONTRACT deploy](https://explorer.stacks.co/txid/0x88461aa9445df11e35e23cf4883e42e47490c9d2a1a493bac4897916adb4f0cb?chain=mainnet)
 
 - [ ] 2021.6.21 -
-- DMT Wallet Setting in Smart Contract
-  - Variable Setting for DMT Wallet
+- DMT Wallet Setting in Smart Contract 
+  - [x] Variable Setting for DMT Wallet 
 - Multi-Mining Test
-- Minimum Mining Amount Variable
+  - [ ] Testnet Contract deployment
+  - [x] Mainnet Test
+    - Two miners compete one block, and only one miner will win/claim the block reward. And this process can be verified by Frontend API. [random sample => winner id] 
+- [x] Minimum Mining Amount Variable
+  -   
 - Token Contract Split
+  - If RTX token wanna be used for DAO in the future, it would better to be splitted from Mint Contract
+  - Under discussion(arkadiko/citycoin)
 - Test for Multi-Claim
-- Frontend integration of readonly function
+- Frontend integration/contract upgrade of readonly function
+  - winner query
+  - mining status query  
 
 
 
