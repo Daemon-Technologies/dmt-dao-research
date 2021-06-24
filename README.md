@@ -221,10 +221,10 @@ It works as before.
   - [x] Variable Setting for DMT Wallet 
 - Multi-Mining Test
   - [ ] Testnet Contract deployment
-  - [x] Mainnet Test
-    - Two miners compete one block, and only one miner will win/claim the block reward. And this process can be verified by Frontend API. [random sample => winner id] 
+  - [x] Mainnet Test : Two miners compete one block, and only one miner will win/claim the block reward. And this process can be verified by Frontend API. [random sample => winner id] 
 - [x] Minimum Mining Amount Variable
-  -   
+  - 50 STX => 10 STX / block 
+  - block reward => 10 RTX / block 
 - Token Contract Split
   - If RTX token wanna be used for DAO in the future, it would better to be splitted from Mint Contract
   - Under discussion(arkadiko/citycoin)
