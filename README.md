@@ -208,15 +208,15 @@ It works as before.
 
 ## Timeline
 
-- [x] 2021.06.15 - 2021.06.19: 
+### 2021.06.15 - 2021.06.19: 
 
-- Connection with the chrome-extension wallet, make sure that we can call the wallet through our dapp.
-- Call the smart contract through the chrome-extension wallet.
-- Implement the smart contract V1 and deploy it on the testnet.
+- [x] Connection with the chrome-extension wallet, make sure that we can call the wallet through our dapp.
+- [x] Call the smart contract through the chrome-extension wallet.
+- [x] Implement the smart contract V1 and deploy it on the testnet.
 
-[mainnet CONTRACT deploy](https://explorer.stacks.co/txid/0x88461aa9445df11e35e23cf4883e42e47490c9d2a1a493bac4897916adb4f0cb?chain=mainnet)
+- [x] [mainnet CONTRACT deploy](https://explorer.stacks.co/txid/0x88461aa9445df11e35e23cf4883e42e47490c9d2a1a493bac4897916adb4f0cb?chain=mainnet)
 
-- [ ] 2021.6.21 -
+### 2021.6.21 -
 - DMT Wallet Setting in Smart Contract 
   - [x] Variable Setting for DMT Wallet 
 - Multi-Mining Test
